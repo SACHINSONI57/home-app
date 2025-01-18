@@ -17,13 +17,16 @@ import com.model.ApplianceRepository;
 	@RestController
 	@RequestMapping("/appliances")
 
+
+	//Controller for appliance
 	public class ApplianceController {
 		
 		@Autowired
 		private ApplianceRepository applianceRepository;
 
 	//Get all Appliance
-		
+
+		// Getting all appliances from db
 		@GetMapping
 		public List<Appliance> getAllAppliances() {
 			
